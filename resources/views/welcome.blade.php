@@ -4,27 +4,25 @@
 <div class="login-form">
 
                 <form id="loginForm">
-                    <div class="input-group">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username" placeholder="Enter Username" required>
-                    </div>
                    <div class="input-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                        <input type="email" id="email" name="email" placeholder="Enter Email" >
                     </div>
                     <div class="input-group">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                        <input type="password" id="password" name="password" placeholder="Enter Password" >
                     </div>
                     <div class="input-group">
-                        <button type="submit" class="racetrack-button">Log In</button>
+                        <button type="submit" href='{{ asset('http://127.0.0.1:8000/dashboard')}}'class="racetrack-button">Login</button>
                     </div>
                 </form>
             </div>
             <div class="footer">
-                <a href="#" style="color:black;">Administrator</a>
-                <a href="#"style="color:red;">Forgot Password?</a>
+                <a href="{{ asset('http://127.0.0.1:8000/signup') }}"style="color:rgb(236, 230, 230);">Sign Up</a>&nbsp;
+                &nbsp;
+                <a href="{{ asset('http://127.0.0.1:8000/forgotpassword/') }}" style="color:red;">Forgot Password?</a>&nbsp;
             </div>
+
 
 
 

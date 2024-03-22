@@ -1,0 +1,50 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.header {
+    background-color: #812424;
+    color: white;
+    padding: 35px 20px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.message-list {
+    background-color: white;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+}
+
+.message-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.message-content {
+    flex-grow: 1;
+}
+
+.unread {
+    font-weight: bold; /* Example styling for unread messages */
+}
+
+.unread {
+    font-weight: bold; /* Example styling for unread messages */
+}
+
+.message-time {
+    color: #999;
+    font-size: 0.8em;
+}

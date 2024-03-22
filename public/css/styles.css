@@ -40,7 +40,7 @@ body {
     padding: 30px;
   }
 
-  h2 {
+  .form-container h2 {
     margin-top: 0;
     color: #333;
     font-size: 28px;
@@ -65,7 +65,7 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
+}
 
   button[type="submit"] {
     background-color: #76282A;

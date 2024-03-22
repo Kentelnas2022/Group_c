@@ -24,9 +24,30 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
-Route::get('/adverts', function () {
+Route::get('/user/adverts', function () {
     return view('adverts');
 });
+
+Route::get('/message', function () {
+    return view('message');
+});
+
+Route::get('/lostitem', function () {
+    return view('lostitem');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+Route::get('/signup', function () {
+    return view('signup');
+});
+
+Route::get('/forgotpassword', function () {
+    return view('forgotpassword');
+});
+
 
 
 

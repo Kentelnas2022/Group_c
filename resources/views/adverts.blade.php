@@ -1,45 +1,45 @@
 @extends('layouts.adverts')
 
 @section('content')
-    <div class="container">
-        <section class="form-container">
-            <h2>Add a New Entry</h2>
+<div class="container">
+    <section class="form-container">
+        <h2>Add a New Entry</h2>
+        <form>
+            <div class="mb-3">
+                <label for="found-lost" class="form-label">Found/Lost:</label>
+                <select id="found-lost" name="found_lost" class="form-select">
+                    <option value="found">Found</option>
+                    <option value="lost">Lost</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="item-name" class="form-label">Item Name:</label>
+                <input type="text" id="item-name" name="item-name" class="form-control" placeholder="Enter item name" required>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description:</label>
+                <textarea id="description" name="description" class="form-control" placeholder="Enter item description" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="contact-number" class="form-label">Contact Number:</label>
+                <input type="tel" id="contact-number" name="contact_number" class="form-control" placeholder="Enter contact number" required>
+            </div>
+            <div class="mb-3">
+                <label for="location" class="form-label">Location:</label>
+                <input type="text" id="location" name="location" class="form-control" placeholder="Enter location" required>
+            </div>
+            <div class="mb-3">
+                <label for="photo" class="form-label">Photo:</label>
+                <input type="file" id="photo" name="photo" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+</div>
 
-                <div class="input-group">
-                    <label for="found-lost">Found/Lost:</label>
-                    <select id="found-lost" name="found_lost">
-                        <option value="found">Found</option>
-                        <option value="lost">Lost</option>
-                    </select>
-                </div>
-                <div class="input-group">
-                    <label for="item-name">Item Name:</label>
-                    <input type="text" id="item-name" name="item-name" placeholder="Enter item name" required>
-                </div>
-                <div class="input-group">
-                    <label for="description">Description:</label>
-                    <textarea id="description" name="description" placeholder="Enter item description" required></textarea>
-                </div>
-                <div class="input-group">
-                    <label for="contact-number">Contact Number:</label>
-                    <input type="tel" id="contact-number" name="contact_number" placeholder="Enter contact number" required>
-                </div>
-                <div class="input-group">
-                    <label for="location">Location:</label>
-                    <input type="text" id="location" name="location" placeholder="Enter location" required>
-                </div>
-                <div class="input-group">
-                    <label for="photo">Photo:</label>
-                    <input type="file" id="photo" name="photo">
-                </div>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Lost & Found. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 Lost & Found. All rights reserved.</p>
+</footer>
 
 
 @endsection

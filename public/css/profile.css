@@ -1,0 +1,52 @@
+
+.profile-card {
+    max-width: 300px;
+    background-color: #5a3131;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.profile-card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.profile-details {
+    margin-top: 20px;
+}
+
+.profile-details h2 {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.profile-details p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+    text-align: left;
+}
+
+.bg-dark-blue {
+    background-color: #f1f3f5;
+}
+
+.text-dark-blue {
+    color: #343a40;
+    background-color: #5a3131;
+}
+body {
+    background-color: #7a3535; /* Change body background color */
+}
+.btn-primary {
+    background-color: #7a3535; /* Change button background color */
+    border-color: #7a3535; /* Change button border color */
+}
+
+.btn-primary:hover {
+    background-color:#7a3535 ; /* Change button background color on hover */
+    border-color: #7a3535; /* Change button border color on hover */
+}
