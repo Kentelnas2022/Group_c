@@ -49,6 +49,13 @@ Route::get('/forgotpassword', function () {
 });
 
 
+Route::get('/admin/admin', function () {
+    return view('admin.admin');
+});
+
+Route::get('/message.blade.php', function () {
+    return view('message');
+});
 
 
 
