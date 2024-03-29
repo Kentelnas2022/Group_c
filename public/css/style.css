@@ -1,9 +1,11 @@
 body {
     background-color: #76282A;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 40px;
+    overflow: hidden;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     body {
         margin: auto;
     }
@@ -14,6 +16,7 @@ body {
 
 .header {
     margin-bottom: 10px;
+    margin-top: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -87,13 +90,9 @@ body {
 header {
     padding: 30px;
     border-color: #ffffff;
+    margin-top: 20px;
 }
 
-.exclamition {
-    display: inline-flex;
-    background: #FFDFAF;
-    padding: 0.5em 1em; /* Combined padding properties */
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
+h1 {
+    color: whitesmoke;
 }
