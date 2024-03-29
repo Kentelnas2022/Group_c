@@ -2,14 +2,15 @@
 
 @section('content')
 
-<div class="main-container d-flex">
-    <!-- Sidebar -->
-    <div class="sidebar" id="side_nav">
-        <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-center">
-            <h1 class="fs-4">
-                <img src="{{ asset('asset/Ellipse 63.png') }}" alt="Lost & Found Logo" width="80" height="80" class="me-2">
-                <p>Lost & Found</p>
-            </h1>
+<nav class="main-menu">
+    <ul>
+        <li>
+            <a href="http://127.0.0.1:8000/user/adverts">
+                <i class="fa fa-home fa-2x"></i>
+                <span class="nav-text">
+                    Dashboard
+                </span>
+            </a>
 
             <!-- Menu Button -->
             <button class="btn d-md-none d-block close-btn px-1 py-0 text-white" id="menuButton">
