@@ -1,12 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+
 
 header {
     background-color: #76282A;
@@ -82,4 +74,109 @@ footer {
 
 .item-list li:hover {
     background-color: #eaeaea;
+}
+
+
+
+
+  .card-header {
+    background-color: #8b0000;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .card {
+    max-width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,.15);
+  }
+  .card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+  }
+  .card-body {
+    position: relative;
+  }
+  .card-footer {
+    background-color: #ffffff;
+    border-top: 0;
+  }
+  .profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .username {
+    font-weight: bold;
+  }
+  .description {
+    font-size: 0.9em;
+    color: #333;
+  }
+
+
+  .header-box {
+    text-align: center;
+    color: #fff;
+}
+
+.header-box h1 {
+    margin: 0;
+}
+
+body{
+    background: #eee;
+    overflow: hidden;
+   }
+
+   #side_nav{
+    background: #5c1c1c;
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+    padding-bottom: 20px;
+    position: sticky;
+   }
+   .content{
+      min-height: 100vh;
+      width: 100%;
+   }
+   hr.h-color{
+     background: #eee;
+   }
+
+
+
+   .content{
+      min-height: 100vh;
+      width: 100%;
+   }
+   hr.h-color{
+     background: #eee;
+   }
+
+   .sidebar li.active,
+   .sidebar li.active:hover {
+       background: #7c4646;
+       border-radius: 8px;
+   }
+
+
+
+   .sidebar li a{
+    color: #fff;
+   }
+   @media (max-width: 600px) {
+    .header, .profile, .button {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.logout-link{
+    margin-top: 300px;
 }

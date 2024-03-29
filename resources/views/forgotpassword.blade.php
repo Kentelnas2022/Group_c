@@ -14,6 +14,6 @@
 <div class="footer">
     <a href="#" style="color:rgb(236, 230, 230);">Remember Already?</a>&nbsp;
     &nbsp;
-    <a href="{{ asset('http://127.0.0.1:8000/#') }}" style="color:red;">Login</a>&nbsp;
+    <a href="{{ asset('http://127.0.0.1:8000/#') }}" style="color:rgb(255, 255, 255);">Login</a>&nbsp;
 </div>
 @endsection

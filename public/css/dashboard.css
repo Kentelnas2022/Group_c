@@ -5,6 +5,7 @@ body {
     padding: 0x;
     background-color: #C09C9D;
     color: #383838;
+    overflow: hidden;
 }
 
 .col-md-4x {
@@ -105,6 +106,8 @@ body{
     min-width: 250px;
     max-width: 250px;
     transition: all 0.3s;
+    padding-bottom: 20px;
+    position: sticky;
    }
    .content{
       min-height: 100vh;
@@ -114,14 +117,14 @@ body{
      background: #eee;
    }
 
-   .sidebar li.active{
-      background: #eee;
-      border-radius: 8px;
+   .sidebar li.active,
+   .sidebar li.active:hover {
+       background: #7c4646;
+       border-radius: 8px;
    }
 
-   .sidebar li.active a, .sidebar li.active a:hover {
-    color: #471111;
-   }
+
+
    .sidebar li a{
     color: #fff;
    }
@@ -138,3 +141,7 @@ body{
       margin-left: 0;
      }
    }
+
+   .logout-link{
+    margin-top: 300px;
+}

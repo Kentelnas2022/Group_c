@@ -1,5 +1,6 @@
 body {
     background-color: #f8f9fa;
+    overflow: hidden;
 }
 
 .header {
@@ -47,4 +48,108 @@ body {
 .message-time {
     color: #999;
     font-size: 0.8em;
+}
+
+.header-box {
+    text-align: center;
+    color: #fff;
+}
+
+.header-box h1 {
+    margin: 0;
+}
+
+body{
+    background: #eee;
+   }
+
+   #side_nav{
+    background: #5c1c1c;
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+    padding-bottom: 20px;
+    position: sticky;
+   }
+   .content{
+      min-height: 100vh;
+      width: 100%;
+   }
+   hr.h-color{
+     background: #eee;
+   }
+
+
+
+   .content{
+      min-height: 100vh;
+      width: 100%;
+   }
+   hr.h-color{
+     background: #eee;
+   }
+
+   .sidebar li.active,
+   .sidebar li.active:hover {
+       background: #7c4646;
+       border-radius: 8px;
+   }
+
+
+
+   .sidebar li a{
+    color: #fff;
+   }
+   @media (max-width: 600px) {
+    .header, .profile, .button {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+body{
+    background: #eee;
+   }
+
+   #side_nav{
+    background: #5c1c1c;
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+   }
+   .content{
+      min-height: 100vh;
+      width: 100%;
+   }
+   hr.h-color{
+     background: #eee;
+   }
+
+   .sidebar li.active,
+   .sidebar li.active:hover {
+       background: #7c4646;
+       border-radius: 8px;
+   }
+
+
+
+   .sidebar li a{
+    color: #fff;
+   }
+
+   @media(max-width: 767px){
+    #side_nav{
+      margin-left: -250px;
+      position: absolute;
+      min-height: 100vh;
+      z-index: 1;
+
+    }
+    #side_nav.active{
+      margin-left: 0;
+     }
+   }
+
+   .logout-link{
+    margin-top: 300px;
 }

@@ -48,8 +48,17 @@ Route::get('/forgotpassword', function () {
     return view('forgotpassword');
 });
 
+Route::get('/admin/adminlogin', function () {
+    return view('admin.admin');
+});
 
+Route::get('/admin/admindashboard', function () {
+    return view('admin.admindashboard');
+});
 
+Route::get('/user/logout', function () {
+    return view('logout');
+});
 
 
 

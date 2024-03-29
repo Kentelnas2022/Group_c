@@ -9,19 +9,21 @@
 </head>
 <body>
     <header>
-        <div class="your-classname">
-            <img src="https://i.ibb.co/v1CcQcm/Group-96.png" alt="Group" width="38px" style="margin-right:220px;">
-        </div>
+        <div class="classname">
+
+
         <section>
             <center>
-                <img src="https://i.ibb.co/FHXyHY2/423766365-376283168620667-7958441195301408860-n.png" alt="Header" width="200" height="200">
+                <img src="{{ asset('asset/Ellipse 63.png') }}" alt="Header" width="100" height="100">
+                <h1>Lost & Found</h1>
             </center>
+        </div>
         </section>
     </header>
 
-    <main>
-        @yield('content')
-    </main>
+
+    @yield('content')
+
 
     <script src="{{ asset('js/bootstrap.js') }}"></script>
 

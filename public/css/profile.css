@@ -2,9 +2,9 @@
 .profile-card {
     max-width: 300px;
     background-color: #5a3131;
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 20px;
-    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 20px rgba(1, 0, 0, 0.1);
     margin: auto;
 }
 
@@ -38,9 +38,7 @@
     color: #343a40;
     background-color: #5a3131;
 }
-body {
-    background-color: #7a3535; /* Change body background color */
-}
+
 .btn-primary {
     background-color: #7a3535; /* Change button background color */
     border-color: #7a3535; /* Change button border color */
@@ -49,4 +47,73 @@ body {
 .btn-primary:hover {
     background-color:#7a3535 ; /* Change button background color on hover */
     border-color: #7a3535; /* Change button border color on hover */
+}
+@media (max-width: 600px) {
+    .header, .profile, .button {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+.header-box {
+    text-align: center;
+    color: #fff;
+}
+
+.header-box h1 {
+    margin: 0;
+}
+
+body{
+    background: #eee;
+    overflow: hidden;
+   }
+
+   #side_nav{
+    background: #5c1c1c;
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+    padding-bottom: 20px;
+    position: sticky;
+   }
+   .content{
+      min-height: 100vh;
+      width: 100%;
+   }
+   hr.h-color{
+     background: #eee;
+   }
+
+
+
+   .content{
+      min-height: 100vh;
+      width: 100%;
+   }
+   hr.h-color{
+     background: #eee;
+   }
+
+   .sidebar li.active,
+   .sidebar li.active:hover {
+       background: #7c4646;
+       border-radius: 8px;
+   }
+
+
+
+   .sidebar li a{
+    color: #fff;
+   }
+   @media (max-width: 600px) {
+    .header, .profile, .button {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.logout-link{
+    margin-top: 300px;
 }

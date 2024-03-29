@@ -23,7 +23,7 @@
 <div class="footer">
     <a href="{{ asset('http://127.0.0.1:8000/') }}"style="color:rgb(236, 230, 230);">Login</a>&nbsp;
 &nbsp;
-<a href="#"style="color:red;">Forgot Password?</a>&nbsp;
+<a href="#"style="color:white;">Forgot Password?</a>&nbsp;
 </div>
 
  @endsection

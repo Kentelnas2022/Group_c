@@ -20,7 +20,7 @@
             <div class="footer">
                 <a href="{{ asset('http://127.0.0.1:8000/signup') }}"style="color:rgb(236, 230, 230);">Sign Up</a>&nbsp;
                 &nbsp;
-                <a href="{{ asset('http://127.0.0.1:8000/forgotpassword/') }}" style="color:red;">Forgot Password?</a>&nbsp;
+                <a href="{{ asset('http://127.0.0.1:8000/forgotpassword/') }}" style="color:rgb(255, 254, 254);">Forgot Password?</a>&nbsp;
             </div>
 
 

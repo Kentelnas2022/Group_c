@@ -1,16 +1,5 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    margin: 0;
-    padding: 0;
-  }
 
-  header {
-    background-color: #76282A;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
+
 
   .logo {
     display: flex;
@@ -30,7 +19,7 @@ body {
   .container {
     max-width: 800px;
     margin: 20px auto;
-    padding: 0 20px;
+    padding:  20px;
   }
 
   .form-container {
@@ -92,3 +81,66 @@ body {
     text-align: center;
     padding: 10px 0;
   }
+
+
+  .header-box {
+    text-align: center;
+    color: #fff;
+}
+
+.header-box h1 {
+    margin: 0;
+}
+
+body{
+    background: #eee;
+    overflow: hidden;
+   }
+
+   #side_nav{
+    background: #5c1c1c;
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+    padding-bottom: 20px;
+    position: sticky;
+   }
+   .content{
+      min-height: 100vh;
+      width: 100%;
+   }
+   hr.h-color{
+     background: #eee;
+   }
+
+
+
+   .content{
+      min-height: 100vh;
+      width: 100%;
+   }
+   hr.h-color{
+     background: #eee;
+   }
+
+   .sidebar li.active,
+   .sidebar li.active:hover {
+       background: #7c4646;
+       border-radius: 8px;
+   }
+
+
+
+   .sidebar li a{
+    color: #fff;
+   }
+   @media (max-width: 600px) {
+    .header, .profile, .button {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.logout-link{
+    margin-top: 300px;
+}
