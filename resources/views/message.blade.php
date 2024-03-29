@@ -9,11 +9,12 @@
                 <img src="{{ asset('asset/Ellipse 63.png') }}" alt="Lost & Found Logo" width="80" height="80" class="me-2">
                 <p>Lost & Found</p>
             </h1>
-            <!-- Menu Button -->
-            <button class="btn d-md-none d-block close-btn px-1 py-0 text-white" id="menuButton">
-                <img src="{{ asset('asset/menu.png') }}" alt="Menu" width="24" height="24">
-            </button>
         </div>
+            <button class="btn close-btn px-1 py-0 text-white" id="closeButton">
+                <img src="{{ asset('asset/close.png') }}"     alt="Close" width="24" height="24">
+            </button>
+            <!-- Menu Button -->
+
         <ul class="list-unstyled px-2">
             <li><a href="http://127.0.0.1:8000/dashboard/" class="text-decoration-none px-3 py-2 d-block"><i class="fal fa-home"></i> Dashboard</a></li>
             <li><a href="http://127.0.0.1:8000/profile/" class="text-decoration-none px-3 py-2 d-block"><i class="fal fa-list"></i> Profile</a></li>
@@ -30,7 +31,10 @@
     </div>
 
 
-    <div class="content">
+        <div class="content">
+            <button class="btn d-md-none d-block close-btn px-1 py-0 text-white menu-btn" id="menuButton">
+                <img src="{{ asset('asset/menu.png') }}" alt="Menu" width="24" height="24">
+            </button>
 
         <div class="message-list">
           <!-- Example message -->
@@ -58,19 +62,17 @@
 
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const sidebarItems = document.querySelectorAll('.sidebar li');
+     document.addEventListener("DOMContentLoaded", function() {
+    const menuButton = document.getElementById('menuButton');
+    const sideNav = document.getElementById('side_nav');
+    const closeButton = document.getElementById('closeButton'); // Add this line
 
-        sidebarItems.forEach(function(item) {
-            item.addEventListener('click', function() {
-                // Remove active class from all sidebar items
-                sidebarItems.forEach(function(item) {
-                    item.classList.remove('active');
-                });
-
-                // Add active class to the clicked sidebar item
-                this.classList.add('active');
-            });
-        });
+    menuButton.addEventListener('click', function() {
+        sideNav.classList.toggle('active');
     });
+
+    closeButton.addEventListener('click', function() { // Add this block
+        sideNav.classList.remove('active');
+    });
+});
     </script>

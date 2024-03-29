@@ -1,9 +1,9 @@
 
 .profile-card {
-    max-width: 300px;
+    max-width: 270px;
     background-color: #5a3131;
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 10px 10px 20px rgba(1, 0, 0, 0.1);
     margin: auto;
 }
@@ -59,61 +59,86 @@
 .header-box {
     text-align: center;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-box h1 {
     margin: 0;
 }
 
-body{
+
+body {
     background: #eee;
     overflow: hidden;
-   }
+}
 
-   #side_nav{
+#side_nav {
     background: #5c1c1c;
     min-width: 250px;
     max-width: 250px;
-    transition: all 0.3s;
     padding-bottom: 20px;
     position: sticky;
-   }
-   .content{
-      min-height: 100vh;
-      width: 100%;
-   }
-   hr.h-color{
-     background: #eee;
-   }
+    transition: margin-left 0.5s; /* Added transition for smooth sliding */
+}
 
+.content {
+    min-height: 100vh;
+    width: 100%;
+}
 
+hr.h-color {
+    background: #eee;
 
-   .content{
-      min-height: 100vh;
-      width: 100%;
-   }
-   hr.h-color{
-     background: #eee;
-   }
+}
 
-   .sidebar li.active,
-   .sidebar li.active:hover {
-       background: #7c4646;
-       border-radius: 8px;
-   }
+.sidebar li.active,
+.sidebar li.active:hover {
+    background: #7c4646;
+    border-radius: 8px;
+}
 
-
-
-   .sidebar li a{
+.sidebar li a {
     color: #fff;
-   }
-   @media (max-width: 600px) {
-    .header, .profile, .button {
-        flex-direction: column;
-        align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+    #side_nav {
+        margin-left: -250px;
+        position: absolute;
+        min-height: 100vh;
+        z-index: 1;
+    }
+
+    #side_nav.active {
+        margin-left: 0;
     }
 }
 
-.logout-link{
-    margin-top: 300px;
+.logout-link {
+    margin-top: 470px;
+}
+
+
+
+.close-btn {
+
+    position: absolute;
+    top: 20px; /* Adjust top position */
+    right: 20px; /* Adjust right position */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 999; /* Ensure it's below the menu button */
+}
+.menu-btn {
+    position:static;
+    top: 30px; /* Adjust top position */
+    margin-top: 10px;
+    left: 20px; /* Adjust left position */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other elements */
 }
