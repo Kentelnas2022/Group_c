@@ -116,9 +116,6 @@ hr.h-color {
     }
 }
 
-.logout-link {
-    margin-top: 470px;
-}
 
 
 
@@ -136,9 +133,22 @@ hr.h-color {
     position:static;
     top: 30px; /* Adjust top position */
     margin-top: 10px;
-    left: 20px; /* Adjust left position */
+   margin-left: 20px; /* Adjust left position */
     background-color: transparent;
     border: none;
     cursor: pointer;
     z-index: 1000; /* Ensure it's above other elements */
+}
+.logout-link {
+    position: absolute;
+    top: 20px; /* Adjust top position */
+
+}
+
+@media (max-width: 767px) {
+    .logout-link {
+        top: auto;
+        bottom: 20px; /* Adjust bottom position for mobile */
+       margin-right: 20px; /* Adjust right position */
+    }
 }
