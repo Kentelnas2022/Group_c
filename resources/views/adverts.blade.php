@@ -7,7 +7,7 @@
         <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-center">
             <h1 class="fs-4">
                 <img src="{{ asset('asset/Ellipse 63.png') }}" alt="Lost & Found Logo" width="80" height="80" class="me-2">
-                <p>Lost & Found</p>
+                <p>Lost and Found</p>
             </h1>
             <button class="btn close-btn px-1 py-0 text-white" id="closeButton" style="align-self: center;">
                 <img src="{{ asset('asset/close.png') }}" alt="Close" width="24" height="24">

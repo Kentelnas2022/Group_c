@@ -4,7 +4,7 @@
 <div class="login-form">
 
         <div class="input-group">
-            <label for="email">Email</label>
+            <label for="email">Emails</label>
             <input type="email" id="email" name="email" placeholder="Enter Email">
         </div>
             <button type="submit" class="racetrack-button">Reset Password</button>
