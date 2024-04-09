@@ -8,7 +8,7 @@
         <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-center">
             <h1 class="fs-4">
                 <img src="{{ asset('asset/Ellipse 63.png') }}" alt="Lost & Found Logo" width="80" height="80" class="me-2">
-                <p>Lost & Found</p>
+                <p>Lost and Found</p>
             </h1>
 
             <!-- Menu Button -->
