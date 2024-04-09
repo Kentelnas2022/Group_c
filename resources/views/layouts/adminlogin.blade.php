@@ -7,7 +7,7 @@
         <div class="container">
           <div class="col-left">
             <div class="login-text">
-              <h2>Welcome Back</h2>
+              <h2>Welcome Back Tristan</h2>
             </div>
           </div>
           <div class="col-right">
