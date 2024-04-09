@@ -3,7 +3,7 @@
 @section('content')
 
 <header>
-    <h1>Administrators</h1>
+    <h1>Administrator1</h1>
 </header>
 <div class="container">
     <form action="#" method="post">
